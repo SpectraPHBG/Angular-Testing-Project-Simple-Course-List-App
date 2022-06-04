@@ -1,0 +1,21 @@
+.button {
+  outline: none;
+  text-align: center;
+  background-color: #2d7373;
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  padding: 8px;
+  margin-right: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover{
+  box-shadow: 1px 2px 2px gray;
+}
+
+h1,h2,h3,h4,h5{
+  text-align: center;
+  padding-bottom: 15px;
+}

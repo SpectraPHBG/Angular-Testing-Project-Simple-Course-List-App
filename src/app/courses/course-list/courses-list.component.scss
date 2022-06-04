@@ -1,0 +1,31 @@
+section {
+  display: flex;
+  flex-direction: column;
+
+  .article {
+    width: 20%;
+    border: 1px dashed black;
+    box-shadow: 1px 2px 2px gray;
+    padding: 15px;
+    margin-top: 24px;
+  }
+}
+
+.createButton {
+  outline: none;
+  background-color: #43b93a;
+  text-align: center;
+  border: none;
+  padding: 8px;
+  font-weight: bold;
+  width: 70px;
+  cursor: pointer;
+
+  a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+.createButton:hover{
+  box-shadow: 1px 2px 2px gray;
+}

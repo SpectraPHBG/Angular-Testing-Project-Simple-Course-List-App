@@ -1,0 +1,30 @@
+<div>
+
+  <h4 data-test-selector="form-title">
+    {{formGroup?.value?.id? 'Update course' : 'Add course'}}
+  </h4>
+
+  <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+    <div>
+      <input type="text"
+             placeholder="Title"
+             formControlName="title">
+    </div>
+
+    <div>
+      <textarea cols="21" rows="10"
+                placeholder="Description"
+                formControlName="description"></textarea>
+    </div>
+
+    <button type="submit" data-test-selector='button-save'>
+      Save
+    </button>
+
+    <a style="margin-left: 1rem"
+       data-test-selector="button-back"
+       routerLink="/">
+      Back to list
+    </a>
+  </form>
+</div>

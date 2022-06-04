@@ -1,0 +1,18 @@
+.saveButton {
+  outline: none;
+  background-color: #93b7c7;
+  text-align: center;
+  border: none;
+  padding: 8px;
+  font-weight: bold;
+  width: 70px;
+  cursor: pointer;
+
+  a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+.saveButton:hover{
+  box-shadow: 1px 2px 2px gray;
+}

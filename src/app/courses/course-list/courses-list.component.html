@@ -1,0 +1,17 @@
+<h1 data-test-selector="course-list-headline">Courses list</h1>
+
+<div *ngIf="selectedCourse" data-test-selector="selected-course">
+  Selected course: {{ selectedCourse.title }}
+</div>
+
+<div class="createButton">
+  <a routerLink="/courses/add" data-test-selector="button-add">Add new</a>
+</div>
+
+<section>
+  <app-course-item *ngFor="let course of courses"
+                  [course]="course"
+                  (clicked)="onItemClicked($event)"
+                  (deleted)="onItemDeleted($event)"
+                  class="article"></app-course-item>
+</section>
